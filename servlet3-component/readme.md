@@ -6,7 +6,7 @@
 
 该模块中提供了 `ServletContainerInitializer` 的实现类及其处理类 `WebApplicationInitializer`，其会被 servlet3 模块引用并提供 `WebApplicationInitializer` 的实现。
 
-由于 `ServletContainerInitializer` 的实现类是通过 SPI 方法引入的，所以其必须在响应的类路径下才能被加载到。
+由于 `ServletContainerInitializer` 的实现类是通过 SPI 方法引入的，所以其必须在相应的类路径下才能被加载到。
 
 如果想要测试 `ServletContainerInitializer` 的效果，请启动 servlet3 模块进行测试。可以通过外置的 Tomcat 或 直接通过 `mvn tomcat7:run` 命令运行嵌入 Tomcat。
 
